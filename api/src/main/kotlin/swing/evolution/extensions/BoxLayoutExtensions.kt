@@ -9,7 +9,7 @@ fun JPanel.boxLayoutXAxis(op: JPanel.() -> Unit = {}): JPanel {
     val layout = BoxLayout(panel, BoxLayout.X_AXIS)
     panel.layout = layout
     panel.apply(op)
-    //TODO add to tree this node
+    addToParent(panel)
     return panel
 }
 
@@ -18,7 +18,7 @@ fun JPanel.boxLayoutYAxis(op: JPanel.() -> Unit = {}): JPanel {
     val layout = BoxLayout(panel, BoxLayout.Y_AXIS)
     panel.layout = layout
     panel.apply(op)
-    //TODO add to tree this node
+    addToParent(panel)
     return panel
 }
 
@@ -27,7 +27,7 @@ fun JPanel.boxLayoutLine(op: JPanel.() -> Unit = {}): JPanel {
     val layout = BoxLayout(panel, BoxLayout.LINE_AXIS)
     panel.layout = layout
     panel.apply(op)
-    //TODO
+    addToParent(panel)
     return panel
 }
 
@@ -36,7 +36,7 @@ fun JPanel.boxLayoutPage(op: JPanel.() -> Unit): JPanel {
     val layout = BoxLayout(panel, BoxLayout.PAGE_AXIS)
     panel.layout = layout
     panel.apply(op)
-    //TODO
+    addToParent(panel)
     return panel
 }
 
