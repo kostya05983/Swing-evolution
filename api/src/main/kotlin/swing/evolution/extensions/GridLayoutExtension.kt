@@ -17,11 +17,11 @@ fun JPanel.gridLayout(rows: Int, columns: Int) {
 
 fun main() {
     val panel = JPanel()
-    panel.boxLayoutL {
+    panel.boxLayoutLine {
         button {
             text = "Trampapam"
         }
-        boxLayoutY {
+        boxLayoutYAxis {
             button {
                 text = "TestTest"
             }
